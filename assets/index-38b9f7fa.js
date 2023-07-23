@@ -187,7 +187,7 @@ Error generating stack: `+o.message+`
 
     h1 {
       font-size: 47px;
-      margin-top: -45px;
+      margin: 47px;
     }
 
     h2 {
@@ -217,19 +217,18 @@ Error generating stack: `+o.message+`
 
     h2 {
       font-size: 57px;
-      margin-top: -45px;
     }
   }
 
   @media (max-width: ${M.mobile}px)  {
     h1 {
       font-size: 32px;
-      margin: 0;
+      margin-top: 0;
     }
 
     h2 {
       font-size: 52px;
-      margin: 0;
+      margin-top: 0;
     }
   }
 `,Om="/gym-landing-page/assets/section01-bg-img-bb54ae26.jpg",ho=tt.createContext(null),Fm=({children:e})=>{const[t,n]=tt.useState(!1);return p.jsx(ho.Provider,{value:{filter:t,setFilter:n},children:e})},Dm=()=>{const{setFilter:e}=tt.useContext(ho),t=()=>{e(!0)};return p.jsx(Mm,{children:p.jsx("i",{className:"bi bi-list",onClick:t})})},Mm=T.div`
