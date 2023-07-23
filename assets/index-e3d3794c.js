@@ -513,6 +513,7 @@ Error generating stack: `+o.message+`
     background-color: ${({isSpecial:e})=>e?"var(--terciary-color)":""};
   }
 `,w0="/gym-landing-page/assets/card01-700c312c.jpg",S0="/gym-landing-page/assets/card02-225b77db.png",k0="/gym-landing-page/assets/card03-e244bd37.png",E0=()=>p.jsxs(A0,{children:[p.jsx("h2",{children:"nossos planos"}),p.jsxs(C0,{children:[p.jsx(Go,{img:w0,title:"passe de 1 dia",description:"Teste gratuitamente"}),p.jsx(Go,{img:S0,title:"passe de 1 MÊS",description:"À partir de",isSpecial:!0,price:"R$99,90"}),p.jsx(Go,{img:k0,title:"passe de 1 ANO",description:"À partir de",price:"R$999,00"})]})]}),A0=T.section`
+  gap: 20px;
   height: fit-content;
   display: flex;
   justify-content: space-evenly;
