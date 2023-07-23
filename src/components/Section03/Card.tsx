@@ -1,4 +1,4 @@
-import { styled } from "styled-components"
+import { styled } from 'styled-components'
 
 interface CardProps {
   img: string
@@ -17,7 +17,7 @@ export const Card = ({ img, title, description, isSpecial, price }: CardProps) =
     <Wrappper isSpecial={isSpecial as boolean}>
       {isSpecial && <Special>RECOMENDADO POR USUÁRIOS</Special>}
       <div>
-        <img src={img} alt="" />
+        <img src={img} alt='' />
       </div>
       <h5>{title}</h5>
       <PriceWrapper>
@@ -39,12 +39,12 @@ const Wrappper = styled.div<SpecialProps>`
 
   & img {
     margin-bottom: -5px;
-    width: 100%
+    width: 100%;
   }
 
   & h5 {
-    padding: 15px ;
-    background-color: ${({ isSpecial }) => isSpecial ? 'var(--terciary-color)' : 'black'}
+    padding: 15px;
+    background-color: ${({ isSpecial }) => (isSpecial ? 'var(--terciary-color)' : 'black')};
   }
 `
 
@@ -79,10 +79,10 @@ const Special = styled.span`
 `
 
 const Button = styled.button<SpecialProps>`
-  border-color: ${({ isSpecial }) => isSpecial ? 'var(--terciary-color)' : ''};
-  color: ${({ isSpecial }) => isSpecial ? 'var(--terciary-color)' : ''};
+  border-color: ${({ isSpecial }) => (isSpecial ? 'var(--terciary-color)' : '')};
+  color: ${({ isSpecial }) => (isSpecial ? 'var(--terciary-color)' : '')};
 
   &:hover {
-    background-color: ${({ isSpecial }) => isSpecial ? 'var(--terciary-color)' : ''};
+    background-color: ${({ isSpecial }) => (isSpecial ? 'var(--terciary-color)' : '')};
   }
 `

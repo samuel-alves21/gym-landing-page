@@ -1,7 +1,7 @@
 import { styled } from 'styled-components'
 import { breakinpPoints } from '../../utils/breakingPoints'
 import { FilterContext, FilterContextInterface } from '../../context/FilterContext'
-import { useContext } from 'react' 
+import { useContext } from 'react'
 
 export const HamburguerLinks = () => {
   const { setFilter } = useContext(FilterContext) as FilterContextInterface
@@ -12,7 +12,7 @@ export const HamburguerLinks = () => {
 
   return (
     <Wrapper>
-      <i className="bi bi-list" onClick={handleHamburguerClick}></i>
+      <i className='bi bi-list' onClick={handleHamburguerClick}></i>
     </Wrapper>
   )
 }
@@ -39,7 +39,7 @@ const Wrapper = styled.div`
     color: #fff;
   }
 
-  @media (min-width: ${breakinpPoints.mobile}px)  {
+  @media (min-width: ${breakinpPoints.mobile}px) {
     display: none;
   }
 `

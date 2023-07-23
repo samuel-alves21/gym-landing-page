@@ -2,6 +2,7 @@ import { styled } from 'styled-components'
 import { useContext } from 'react'
 import { FilterContext, FilterContextInterface } from '../../context/FilterContext'
 import { breakinpPoints } from '../../utils/breakingPoints'
+import { A } from './Links'
 
 interface WrapperProps {
   $shouldDisplayMobileNav: boolean
@@ -16,12 +17,12 @@ export const MobileNav = () => {
 
   return (
     <Wrapper $shouldDisplayMobileNav={filter}>
-      <a href="">sobre</a>
-      <a href="">serviços</a>
-      <a href="">preços</a>
-      <a href="">equipamentos</a>
-      <a href="">Registre-se</a>
-      <i className="bi bi-x-lg" onClick={handleClick}></i>
+      <A href='#services'>sobre</A>
+      <A href='#services'>serviços</A>
+      <A href='#prices'>preços</A>
+      <A href='#services'>equipamentos</A>
+      <A href='#sign-up'>Registre-se</A>
+      <i className='bi bi-x-lg' onClick={handleClick}></i>
     </Wrapper>
   )
 }
@@ -39,12 +40,12 @@ const Wrapper = styled.div<WrapperProps>`
   padding: 1rem 1.5rem;
   gap: 15px;
   transition: transform 0.3s ease-in-out;
-  transform: translateX(${({ $shouldDisplayMobileNav }) => $shouldDisplayMobileNav ? '0' : '100%'});
+  transform: translateX(${({ $shouldDisplayMobileNav }) => ($shouldDisplayMobileNav ? '0' : '100%')});
 
   & .bi-x-lg {
     font-size: 1.4rem;
     color: #fff;
-    cursor: pointer;  
+    cursor: pointer;
   }
 
   & .bi-x-lg:hover {

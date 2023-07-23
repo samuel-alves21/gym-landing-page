@@ -9,10 +9,13 @@ export const CallToAction = () => {
         <h1>AQUI NÃO SE</h1>
         <h2>TREINA FOFO</h2>
       </div>
-      <p>Transforme-se na nossa academia! Oferecemos equipamentos modernos, instrutores qualificados e aulas para todos os níveis. Alcance seus objetivos fitness conosco. Experimente hoje!</p>
-      <div className="styled-a">
-        <a href="" >começar</a>
-        <img src={arrow} alt="" />
+      <p>
+        Transforme-se na nossa academia! Oferecemos equipamentos modernos, instrutores qualificados e aulas para todos
+        os níveis. Alcance seus objetivos fitness conosco. Experimente hoje!
+      </p>
+      <div className='styled-a'>
+        <a href='#sign-up'>começar</a>
+        <img src={arrow} alt='' />
       </div>
     </Wrapper>
   )
@@ -31,8 +34,9 @@ const Wrapper = styled.div`
     max-width: 670px;
   }
 
-  & h1, & h2 {
-    margin-top: -75px
+  & h1,
+  & h2 {
+    margin-top: -75px;
   }
 
   @media (max-width: ${breakinpPoints.desktop}px) {
@@ -40,11 +44,11 @@ const Wrapper = styled.div`
     text-align: center;
 
     & h1 {
-      margin-top: -5px
+      margin-top: -5px;
     }
 
     & h2 {
-      margin-top: -40px
+      margin-top: -40px;
     }
   }
 `

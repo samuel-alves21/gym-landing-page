@@ -1,12 +1,12 @@
-import { styled } from "styled-components"
-import { Text } from "./Text"
-import { BgImg } from "./BgImg"
-import { MainImage } from "./MainImage"
-import { breakinpPoints } from "../../utils/breakingPoints"
+import { styled } from 'styled-components'
+import { Text } from './Text'
+import { BgImg } from './BgImg'
+import { MainImage } from './MainImage'
+import { breakinpPoints } from '../../utils/breakingPoints'
 
 export const Section04 = () => {
   return (
-    <Wrappper>
+    <Wrappper id='sign-up'>
       <BgImg />
       <MainImage />
       <Text />
@@ -33,4 +33,3 @@ const Wrappper = styled.section`
     padding-bottom: 40px;
   }
 `
-

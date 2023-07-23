@@ -1,9 +1,9 @@
-import { styled } from "styled-components"
-import { breakinpPoints } from "../../utils/breakingPoints";
+import { styled } from 'styled-components'
+import { breakinpPoints } from '../../utils/breakingPoints'
 
 interface InfoNumbersProps {
-  heading: string;
-  description: string;
+  heading: string
+  description: string
 }
 
 export const InfoNumbers = ({ heading, description }: InfoNumbersProps) => {

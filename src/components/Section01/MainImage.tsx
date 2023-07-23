@@ -3,9 +3,7 @@ import image from '../../img/section01-man.png'
 import { breakinpPoints } from '../../utils/breakingPoints'
 
 export const MainImage = () => {
-  return (
-    <Img src={image} alt="" />
-  )
+  return <Img src={image} alt='' />
 }
 
 const Img = styled.img`

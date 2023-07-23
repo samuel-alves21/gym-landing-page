@@ -1,5 +1,5 @@
 import arrow from '../../img/Arrow1.png'
-import { styled } from "styled-components"
+import { styled } from 'styled-components'
 import { breakinpPoints } from '../../utils/breakingPoints'
 
 interface CardProps {
@@ -17,12 +17,12 @@ interface SpecialProps {
 export const Card = ({ img, heading, paragraph, btnText, special }: CardProps) => {
   return (
     <Wrapper special={special}>
-      <Img src={img} alt="" />
+      <Img src={img} alt='' />
       <h3>{heading}</h3>
       <p>{paragraph}</p>
-      <Btn className="styled-a " special={special}>
-        <a>{btnText}</a>
-        <img src={arrow} alt="" />
+      <Btn className='styled-a ' special={special}>
+        <a href='#sign-up'>{btnText}</a>
+        <img src={arrow} alt='' />
       </Btn>
     </Wrapper>
   )

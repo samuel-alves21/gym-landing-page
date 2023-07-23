@@ -1,18 +1,18 @@
-import { createContext, useState } from "react";
+import { createContext, useState } from 'react'
 
 export interface FilterContextInterface {
-  filter: boolean,
-  setFilter: (value: boolean) => void;
+  filter: boolean
+  setFilter: (value: boolean) => void
 }
 
 interface FilterProviderProps {
-  children: React.ReactNode;
+  children: React.ReactNode
 }
 
 export const FilterContext = createContext<null | FilterContextInterface>(null)
 
-export const FilterProvider = ({children}: FilterProviderProps) => {
+export const FilterProvider = ({ children }: FilterProviderProps) => {
   const [filter, setFilter] = useState<boolean>(false)
 
-  return <FilterContext.Provider value={{filter, setFilter}}>{children}</FilterContext.Provider>
+  return <FilterContext.Provider value={{ filter, setFilter }}>{children}</FilterContext.Provider>
 }

@@ -3,12 +3,14 @@ import { styled } from 'styled-components'
 import { Nav } from '../Nav'
 import { CallToAction } from './CallToAction'
 import { MainImage } from './MainImage'
+import { ScrollButton } from '../ScrollButton'
 
 export const Section01 = () => {
   return (
-    <Wrapper>
+    <Wrapper id='home'>
+      <ScrollButton />
       <Nav />
-      <Img src={bgImage} alt="" />
+      <Img src={bgImage} alt='' />
       <div>
         <CallToAction />
         <MainImage />

@@ -26,6 +26,6 @@ const StyledFilter = styled.div<StyledFilterProps>`
   width: 100vw;
 
   @media (max-width: ${breakinpPoints.mobile}px) {
-    display: ${(props) => props.filter ? 'initial' : 'none'};
+    display: ${(props) => (props.filter ? 'initial' : 'none')};
   }
 `

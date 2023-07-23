@@ -1,6 +1,6 @@
-import { styled } from "styled-components"
-import { MainImage } from "./MainImage"
-import { Form } from "./Form"
+import { styled } from 'styled-components'
+import { MainImage } from './MainImage'
+import { Form } from './Form'
 
 export const Section05 = () => {
   return (

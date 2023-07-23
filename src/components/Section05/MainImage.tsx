@@ -1,11 +1,9 @@
-import { styled } from "styled-components"
+import { styled } from 'styled-components'
 import img from '../../img/section05-img.png'
-import { breakinpPoints } from "../../utils/breakingPoints"
+import { breakinpPoints } from '../../utils/breakingPoints'
 
 export const MainImage = () => {
-  return (
-    <Img src={img} alt="" />
-  ) 
+  return <Img src={img} alt='' />
 }
 
 const Img = styled.img`
@@ -15,7 +13,7 @@ const Img = styled.img`
   bottom: 0;
   height: 526px;
 
-  @media (max-width: ${breakinpPoints.largeDesktop}px)  {
+  @media (max-width: ${breakinpPoints.largeDesktop}px) {
     display: none;
   }
 `

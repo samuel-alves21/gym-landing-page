@@ -1,24 +1,25 @@
-import { styled } from "styled-components"
-import { Card } from "./Card"
+import { styled } from 'styled-components'
+import { Card } from './Card'
 import card01 from '../../img/card01.jpg'
 import card02 from '../../img/card02.png'
 import card03 from '../../img/card03.png'
-import { breakinpPoints } from "../../utils/breakingPoints"
+import { breakinpPoints } from '../../utils/breakingPoints'
 
 export const Section03 = () => {
   return (
-    <Wrapper>
+    <Wrapper id='prices'>
       <h2>nossos planos</h2>
       <CardsWrappper>
-        <Card img={card01} title="passe de 1 dia" description="Teste gratuitamente"/>
-        <Card img={card02} title="passe de 1 MÊS" description="À partir de" isSpecial={true} price="R$99,90"/>
-        <Card img={card03} title="passe de 1 ANO" description="À partir de" price="R$999,00"/>
+        <Card img={card01} title='passe de 1 dia' description='Teste gratuitamente' />
+        <Card img={card02} title='passe de 1 MÊS' description='À partir de' isSpecial={true} price='R$99,90' />
+        <Card img={card03} title='passe de 1 ANO' description='À partir de' price='R$999,00' />
       </CardsWrappper>
     </Wrapper>
   )
 }
 
 const Wrapper = styled.section`
+  gap: 20px;
   height: fit-content;
   display: flex;
   justify-content: space-evenly;
@@ -43,7 +44,7 @@ const Wrapper = styled.section`
 `
 
 const CardsWrappper = styled.div`
-  width: 100%;  
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;

@@ -1,10 +1,8 @@
 import { styled } from 'styled-components'
-import img from '../../img/section04-bg.png' 
+import img from '../../img/section04-bg.png'
 
 export const BgImg = () => {
-  return (
-    <Img src={img} alt="" />
-  )
+  return <Img src={img} alt='' />
 }
 
 const Img = styled.img`

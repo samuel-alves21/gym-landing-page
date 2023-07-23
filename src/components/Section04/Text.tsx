@@ -1,6 +1,6 @@
-import { styled } from "styled-components"
-import { breakinpPoints } from "../../utils/breakingPoints"
-import { InfoNumbers } from "./InfoNumbers"
+import { styled } from 'styled-components'
+import { breakinpPoints } from '../../utils/breakingPoints'
+import { InfoNumbers } from './InfoNumbers'
 
 export const Text = () => {
   return (
@@ -8,17 +8,18 @@ export const Text = () => {
       <div>
         <div>
           <h1>Faça parte</h1>
-          &nbsp;
-          &nbsp;
-          &nbsp;
+          &nbsp; &nbsp; &nbsp;
           <h2>da família</h2>
         </div>
-        <p>Nossa academia tem milhares de clientes satisfeitos com resultados surpreendentes. Junte-se a nós e comece a transformar seu corpo agora!</p>
+        <p>
+          Nossa academia tem milhares de clientes satisfeitos com resultados surpreendentes. Junte-se a nós e comece a
+          transformar seu corpo agora!
+        </p>
       </div>
       <InfoWrapper>
-        <InfoNumbers heading="+15" description="Unidades na cidade de São Paulo."/>
-        <InfoNumbers heading="+2000" description="Alunos matriculados em nossas unidades."/>
-        <InfoNumbers heading="+100" description="Professores altamente qualificados."/>
+        <InfoNumbers heading='+15' description='Unidades na cidade de São Paulo.' />
+        <InfoNumbers heading='+2000' description='Alunos matriculados em nossas unidades.' />
+        <InfoNumbers heading='+100' description='Professores altamente qualificados.' />
       </InfoWrapper>
     </Wrapper>
   )
@@ -88,7 +89,8 @@ const Wrapper = styled.div`
     }
   }
 
-  & h1, & h2 {
+  & h1,
+  & h2 {
     margin: 0;
   }
 

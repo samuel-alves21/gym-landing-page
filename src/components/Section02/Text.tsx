@@ -1,13 +1,11 @@
-import { styled } from "styled-components"
-import { breakinpPoints } from "../../utils/breakingPoints"
+import { styled } from 'styled-components'
+import { breakinpPoints } from '../../utils/breakingPoints'
 
 export const Text = () => {
   return (
     <Wrapper>
       <h1>nossos</h1>
-      &nbsp;
-      &nbsp;
-      &nbsp;
+      &nbsp; &nbsp; &nbsp;
       <h2>diferenciais</h2>
     </Wrapper>
   )
@@ -15,12 +13,12 @@ export const Text = () => {
 
 const Wrapper = styled.div`
   display: flex;
-  align-items: center; 
+  align-items: center;
 
   @media (max-width: ${breakinpPoints.mobile}px) {
     flex-direction: column;
 
-    &  h2 {
+    & h2 {
       margin-top: -61px;
     }
   }

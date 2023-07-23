@@ -1,5 +1,5 @@
-import { createGlobalStyle } from "styled-components";
-import { breakinpPoints } from "./utils/breakingPoints";
+import { createGlobalStyle } from 'styled-components'
+import { breakinpPoints } from './utils/breakingPoints'
 
 export const GlobalStyles = createGlobalStyle`
   *,
@@ -12,12 +12,14 @@ export const GlobalStyles = createGlobalStyle`
 
   :root {
     --primary-color: #A03333;
+    --primary-color-hover: #ca4343;
     --secundary-color: #222222;
     --secundary-color-hover: #333333;
     --terciary-color: #FF0202;    
     --terciary-color-hover: #fc4343;
     --quaternary-color: #B4B4B4;
     --quaternary-color-darker: #787878;
+    scroll-behavior: smooth;
   }
 
   nav {

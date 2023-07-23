@@ -1,5 +1,5 @@
-import { styled } from "styled-components"
-import { breakinpPoints } from "../../utils/breakingPoints"
+import { styled } from 'styled-components'
+import { breakinpPoints } from '../../utils/breakingPoints'
 
 export const Footer = () => {
   return <Wrapper></Wrapper>
