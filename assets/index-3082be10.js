@@ -619,7 +619,7 @@ Error generating stack: `+o.message+`
       }
 
       & h2 {
-        margin-top: -51.5px;
+        margin-top: 0;
       }
     }
   }
