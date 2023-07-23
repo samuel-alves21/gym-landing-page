@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { styled } from 'styled-components'
+import { breakinpPoints } from '../utils/breakingPoints'
 
 export const ScrollButton = () => {
   const [showButton, setShowButton] = useState(false)
@@ -48,5 +49,12 @@ const Btn = styled.button`
   & .bi-arrow-up {
     color: #fff;
     font-size: 30px;  
+  }
+
+  @media (max-width: ${breakinpPoints.largeDesktop}px) {
+    right: 20px;
+
+    width: 40px;
+    height: 40px;
   }
 `
