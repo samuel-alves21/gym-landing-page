@@ -186,11 +186,13 @@ export const GlobalStyles = createGlobalStyle`
     h1 {
       font-size: 32px;
       margin-top: -45px;
+      margin: 0;
     }
 
     h2 {
       font-size: 52px;
       margin-top: -45px;
+      margin: 0;
     }
   }
 `
