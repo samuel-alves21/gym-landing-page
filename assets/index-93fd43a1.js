@@ -363,6 +363,13 @@ Error generating stack: `+o.message+`
     color: #fff;
     font-size: 30px;  
   }
+
+  @media (max-width: ${M.largeDesktop}px) {
+    right: 20px;
+
+    width: 40px;
+    height: 40px;
+  }
 `,bm=()=>p.jsxs(e0,{id:"home",children:[p.jsx(Jm,{}),p.jsx(Hm,{}),p.jsx(t0,{src:Fm,alt:""}),p.jsxs("div",{children:[p.jsx($m,{}),p.jsx(Xm,{})]})]}),e0=R.section`
   display: flex;
   flex-direction: column;
