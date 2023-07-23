@@ -238,7 +238,7 @@ Error generating stack: `+o.message+`
   }
 `,Fm="/gym-landing-page/assets/section01-bg-img-bb54ae26.jpg",mo=Me.createContext(null),Dm=({children:e})=>{const[t,n]=Me.useState(!1);return p.jsx(mo.Provider,{value:{filter:t,setFilter:n},children:e})},Mm=()=>{const{setFilter:e}=Me.useContext(mo),t=()=>{e(!0)};return p.jsx(Bm,{children:p.jsx("i",{className:"bi bi-list",onClick:t})})},Bm=R.div`
   position: fixed;
-  right: 40px;
+  right: 20px;
   z-index: 10;
   display: box;
   height: 40px;
