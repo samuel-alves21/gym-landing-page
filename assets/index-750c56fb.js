@@ -187,12 +187,10 @@ Error generating stack: `+o.message+`
 
     h1 {
       font-size: 47px;
-      margin: 47px;
     }
 
     h2 {
       font-size: 67px;
-      margin-top: -45px;
     }
   }
 
@@ -212,7 +210,6 @@ Error generating stack: `+o.message+`
 
     h1 {
       font-size: 37px;
-      margin-top: -45px;
     }
 
     h2 {
@@ -223,7 +220,6 @@ Error generating stack: `+o.message+`
   @media (max-width: ${M.mobile}px)  {
     h1 {
       font-size: 32px;
-      margin-top: 0;
     }
 
     h2 {
