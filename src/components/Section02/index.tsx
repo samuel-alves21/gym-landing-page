@@ -13,28 +13,24 @@ export const Section02 = () => {
       <Text />
       <CardsWrapper>
         <Card
-          special={false}
           img={cardImg1}
           heading='Equipe Qualificada'
           paragraph='Profissionais altamente capacitados e motivados a ajudá-lo a alcançar seus objetivos.'
           btnText='conheça nossos profissionais'
         />
         <Card
-          special={true}
           img={cardImg2}
           heading='Ambiente motivador'
           paragraph='Um ambiente seguro e inspirador para ajudá-lo a manter-se motivado durante seus treinos.'
           btnText='Faça um tour virtual'
         />
         <Card
-          special={false}
           img={cardImg3}
           heading='Aulas Diversas'
           paragraph='Oferecemos uma ampla variedade de aulas, desde musculação até dança, para atender a todos os interesses.'
           btnText='Ver modalidades'
         />
         <Card
-          special={false}
           img={cardImg4}
           heading='Equipamentos Modernos'
           paragraph='Mantemos nossos equipamentos atualizados para garantir a segurança e eficiência de nossos clientes.'
@@ -70,7 +66,21 @@ const CardsWrapper = styled.div`
   align-items: center;
   justify-content: center;
 
+  @media (max-width: ${breakinpPoints.largeDesktop}px) {
+    display: grid;
+    grid-template-columns: 400px 400px;
+    gap: 20px;
+  }
+
+  @media (max-width: ${breakinpPoints.laptop}px) {
+    display: grid;
+    grid-template-columns: 350px 350px;
+    gap: 20px;
+  }
+
+
   @media (max-width: ${breakinpPoints.tablet}px) {
+    display: flex;
     flex-direction: column;
     padding-top: 30px;
     padding-bottom: 30px;

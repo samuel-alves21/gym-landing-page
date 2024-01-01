@@ -15,7 +15,7 @@ interface SpecialProps {
 export const Card = ({ img, title, description, isSpecial, price }: CardProps) => {
   return (
     <Wrappper isSpecial={isSpecial as boolean}>
-      {isSpecial && <Special>RECOMENDADO POR USUÁRIOS</Special>}
+      {isSpecial && <Special id='recomended'>RECOMENDADO POR USUÁRIOS</Special>}
       <div>
         <img src={img} alt='' />
       </div>
@@ -25,7 +25,7 @@ export const Card = ({ img, title, description, isSpecial, price }: CardProps) =
           <p>{description}</p>
           {price && <span>{price}</span>}
         </div>
-        <Button isSpecial={isSpecial as boolean}>selecionar</Button>
+        <button>selecionar</button>
       </PriceWrapper>
     </Wrappper>
   )
@@ -44,7 +44,29 @@ const Wrappper = styled.div<SpecialProps>`
 
   & h5 {
     padding: 15px;
-    background-color: ${({ isSpecial }) => (isSpecial ? 'var(--terciary-color)' : 'black')};
+    background-color: #000;
+  }
+
+  & * {
+    transition: all 0.2s ease-in-out;
+  }
+
+  &:hover {
+    background-color: var(--terciary-color);
+
+    #recomended, h5 {
+      background-color: var(--terciary-color);
+    }
+
+    button {
+      border-color: var(--terciary-color);
+      color: var(--terciary-color);
+    }
+  }
+
+  button:hover {
+    background-color: var(--terciary-color);
+    color: #fff;
   }
 `
 
@@ -70,19 +92,10 @@ const PriceWrapper = styled.div`
 const Special = styled.span`
   text-align: center;
   padding: 10px 5px;
-  background-color: var(--terciary-color);
+  background-color: #000;
   width: 100%;
   color: #fff;
   font-family: Montserrat;
   font-size: 18px;
   font-weight: bold;
-`
-
-const Button = styled.button<SpecialProps>`
-  border-color: ${({ isSpecial }) => (isSpecial ? 'var(--terciary-color)' : '')};
-  color: ${({ isSpecial }) => (isSpecial ? 'var(--terciary-color)' : '')};
-
-  &:hover {
-    background-color: ${({ isSpecial }) => (isSpecial ? 'var(--terciary-color)' : '')};
-  }
 `

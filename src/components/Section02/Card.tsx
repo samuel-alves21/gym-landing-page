@@ -1,26 +1,20 @@
 import arrow from '../../img/Arrow1.png'
 import { styled } from 'styled-components'
-import { breakinpPoints } from '../../utils/breakingPoints'
 
 interface CardProps {
   img: string
   heading: string
   paragraph: string
   btnText: string
-  special: boolean
 }
 
-interface SpecialProps {
-  special: boolean
-}
-
-export const Card = ({ img, heading, paragraph, btnText, special }: CardProps) => {
+export const Card = ({ img, heading, paragraph, btnText }: CardProps) => {
   return (
-    <Wrapper special={special}>
+    <Wrapper>
       <Img src={img} alt='' />
       <h3>{heading}</h3>
       <p>{paragraph}</p>
-      <Btn className='styled-a ' special={special}>
+      <Btn className='styled-a '>
         <a href='#sign-up'>{btnText}</a>
         <img src={arrow} alt='' />
       </Btn>
@@ -33,28 +27,26 @@ const Img = styled.img`
   height: 77px;
 `
 
-const Wrapper = styled.div<SpecialProps>`
+const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  background-color: ${({ special }) => (special ? 'var(--secundary-color)' : 'initial')};
-  padding: 20px;
+  gap: 10px;  padding: 20px;
 
   & p {
     width: 273px;
   }
 
-  @media (max-width: ${breakinpPoints.desktop}px) {
-    align-items: center;
-    text-align: center;
+  &:hover {
+    transition: background-color 0.2s ease-in-out;
+    background-color: var(--secundary-color);
+
+    & div {
+      transition: background-color 0.2s ease-in-out;
+      background-color: var(--terciary-color) !important;
+    }
   }
 `
 
-const Btn = styled.div<SpecialProps>`
-  background-color: ${({ special }) => (special ? 'var(--terciary-color)' : '')};
+const Btn = styled.div`
   max-width: 200px;
-
-  &:hover {
-    background-color: ${({ special }) => (special ? 'var(--terciary-color-hover)' : '')};
-  }
 `

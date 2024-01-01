@@ -2,7 +2,6 @@ import { styled } from 'styled-components'
 import { useContext } from 'react'
 import { FilterContext, FilterContextInterface } from '../../context/FilterContext'
 import { breakinpPoints } from '../../utils/breakingPoints'
-import { A } from './Links'
 
 interface WrapperProps {
   $shouldDisplayMobileNav: boolean
@@ -15,13 +14,21 @@ export const MobileNav = () => {
     setFilter(false)
   }
 
+  const handleScrool = () => {
+    const destination = document.querySelector('#sign-up') as HTMLDivElement
+    window.scrollTo({
+      top: destination.offsetTop + 400,
+      behavior: 'smooth'
+    })
+  }
+
   return (
     <Wrapper $shouldDisplayMobileNav={filter}>
       <A href='#services'>sobre</A>
       <A href='#services'>serviços</A>
       <A href='#prices'>preços</A>
       <A href='#services'>equipamentos</A>
-      <A href='#sign-up'>Registre-se</A>
+      <A onClick={handleScrool}>Registre-se</A>
       <i className='bi bi-x-lg' onClick={handleClick}></i>
     </Wrapper>
   )
@@ -54,5 +61,12 @@ const Wrapper = styled.div<WrapperProps>`
 
   @media (max-width: ${breakinpPoints.mobile}px) {
     display: flex;
+  }
+`
+const A = styled.a`
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: var(--secundary-color-hover);
   }
 `

@@ -19,7 +19,7 @@ export const HamburguerLinks = () => {
 
 const Wrapper = styled.div`
   position: fixed;
-  right: 20px;
+  right: 10px;
   z-index: 10;
   display: box;
   height: 40px;
