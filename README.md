@@ -5,4 +5,4 @@ A landing page example made with typescript and react for a challenge made by an
 You can access the live page [here](https://samuel-alves21.github.io/gym-landing-page/)
 
 ## credits
-the overal desing was made by John from [futurodevjohn](https://www.instagram.com/futurodevjohn/)
+The overal desing was made by John from [futurodevjohn](https://www.instagram.com/futurodevjohn/)
