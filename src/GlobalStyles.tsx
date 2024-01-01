@@ -22,6 +22,10 @@ export const GlobalStyles = createGlobalStyle`
     scroll-behavior: smooth;
   }
 
+  body {
+    background-color: #000;
+  }
+
   nav {
     width: 100%;
     display: flex;
@@ -62,11 +66,9 @@ export const GlobalStyles = createGlobalStyle`
 
   section {
     height: fit-content;
-    margin: 0 auto;
-    width: 80%;
-    max-width: 2000px;
     background-color: var(--primary-color);
     padding: 50px calc(20px + 4vw) 50px calc(20px + 4vw);
+    position: relative;
   }
 
   a {

@@ -3,12 +3,11 @@ import { styled } from 'styled-components'
 import { Nav } from '../Nav'
 import { CallToAction } from './CallToAction'
 import { MainImage } from './MainImage'
-import { ScrollButton } from '../ScrollButton'
+import { breakinpPoints } from '../../utils/breakingPoints'
 
 export const Section01 = () => {
   return (
     <Wrapper id='home'>
-      <ScrollButton />
       <Nav />
       <Img src={bgImage} alt='' />
       <div>
@@ -25,6 +24,10 @@ const Wrapper = styled.section`
   position: relative;
   padding-top: 10px;
   padding-bottom: 10px;
+  
+  @media (max-width: ${breakinpPoints.desktop}px) {
+    padding-bottom: 50px;
+  }
 
   & > div {
     position: relative;

@@ -28,10 +28,10 @@ function App() {
 }
 
 const MainContainer = styled.div`
-  width: 100%;
-  background-color: #000000;
+  width: min(100%, 2000px);
   overflow: hidden;
   position: relative;
+  margin: 0 auto;
 `
 
 export default App

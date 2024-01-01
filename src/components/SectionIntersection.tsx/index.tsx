@@ -91,13 +91,6 @@ const Wrapper = styled.div`
   align-items: center;
   background-color: var(--secundary-color);
   height: 56px;
-  width: 80%;
-  max-width: 2000px;
-  margin: 0 auto;
-
-  @media (max-width: ${breakinpPoints.largeDesktop}px) {
-    width: 100%;
-  }
 
   & > div > div {
     display: flex;
@@ -107,5 +100,18 @@ const Wrapper = styled.div`
     color: #fff;
     font-family: Bebas Neue;
     font-size: 32px;
+  }
+
+  @media (max-width: ${breakinpPoints.largeDesktop}px) {
+    width: 100%;
+    height: 30px;
+
+    & span {
+      font-size: 20px;
+    }
+
+    & img {
+      width: 30px
+    }
   }
 `

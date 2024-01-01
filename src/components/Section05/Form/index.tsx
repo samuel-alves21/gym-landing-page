@@ -79,6 +79,9 @@ const Btn = styled.button`
 
 const Input = styled.input`
   width: 235px;
+  &:focus {
+    outline: none;
+  }
 `
 
 const InputWrapper = styled.div`

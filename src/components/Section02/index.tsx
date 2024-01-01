@@ -53,8 +53,12 @@ const Wrapper = styled.section`
   align-items: center;
 
   @media (max-width: ${breakinpPoints.desktop}px) {
-    padding-top: 30px;
+    padding-top: 80px;
     padding-bottom: 30px;
+  }
+
+  @media (max-width: ${breakinpPoints.mobile}px) {
+    padding-top: 30px;
   }
 `
 
