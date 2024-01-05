@@ -63,6 +63,35 @@ export const SectionIntersection = () => {
           <span>treino&nbsp;</span>
         </div>
         <img src={icon} alt='' />
+
+        <div>
+          <span>consultoria&nbsp;</span>
+          <span>individual&nbsp;</span>
+        </div>
+        <img src={icon} alt='' />
+        <div>
+          <span>+20&nbsp;</span>
+          <span>professores&nbsp;</span>
+        </div>
+        <img src={icon} alt='' />
+        <div>
+          <span>treine&nbsp;</span>
+          <span>da&nbsp;</span>
+          <span>sua&nbsp;</span>
+          <span>forma&nbsp;</span>
+        </div>
+        <img src={icon} alt='' />
+        <div>
+          <span>+15&nbsp;</span>
+          <span>unidades&nbsp;</span>
+        </div>
+        <img src={icon} alt='' />
+        <div>
+          <span>montamos&nbsp;</span>
+          <span>seu&nbsp;</span>
+          <span>treino&nbsp;</span>
+        </div>
+        <img src={icon} alt='' />
       </Track>
     </Wrapper>
   )

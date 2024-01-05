@@ -22,6 +22,7 @@ export const CallToAction = () => {
 }
 
 const Wrapper = styled.div`
+  margin-top: 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,23 +33,16 @@ const Wrapper = styled.div`
 
   & p {
     max-width: 670px;
+    padding: 0 5px;
   }
 
-  & h1,
-  & h2 {
-    margin-top: -75px;
+  h1 {
+    line-height: 0.3;
   }
+
 
   @media (max-width: ${breakinpPoints.desktop}px) {
     align-items: center;
     text-align: center;
-
-    & h1 {
-      margin-top: -5px;
-    }
-
-    & h2 {
-      margin-top: -40px;
-    }
   }
 `

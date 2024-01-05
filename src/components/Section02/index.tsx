@@ -42,8 +42,17 @@ export const Section02 = () => {
 }
 
 const Wrapper = styled.section`
+  h1 {
+    line-height: 0.3;
+  }
+
+  h2 {
+    line-height: 0.5;
+  }
+
   display: flex;
   flex-wrap: wrap;
+  gap: 50px;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;

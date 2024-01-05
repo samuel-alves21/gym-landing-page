@@ -42,7 +42,7 @@ export const GlobalStyles = createGlobalStyle`
   h1 {
     font-size: 72px;
     color: #FFF;
-    font-family: Bungee Outline;
+    font-family: Bebas Neue;
     font-weight: 400;
   }
 
@@ -152,12 +152,10 @@ export const GlobalStyles = createGlobalStyle`
 
     h1 {
       font-size: 47px;
-      margin-top: -45px;
     }
 
     h2 {
       font-size: 67px;
-      margin-top: -45px;
     }
   }
 
@@ -177,26 +175,20 @@ export const GlobalStyles = createGlobalStyle`
 
     h1 {
       font-size: 37px;
-      margin-top: -45px;
     }
 
     h2 {
       font-size: 57px;
-      margin-top: -45px;
     }
   }
 
   @media (max-width: ${breakinpPoints.mobile}px)  {
     h1 {
       font-size: 32px;
-      margin-top: -45px;
-      margin: 0;
     }
 
     h2 {
       font-size: 52px;
-      margin-top: -45px;
-      margin: 0;
     }
   }
 `

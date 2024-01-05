@@ -50,25 +50,13 @@ const Wrapper = styled.div`
         flex-direction: column;
         align-items: flex-start;
       }
-
-      & h2 {
-        margin-top: -80px;
-      }
-
-      & p {
-        margin-top: 10px;
-      }
     }
 
     @media (max-width: ${breakinpPoints.largeDesktop}px) {
       & div {
         flex-direction: row;
         align-items: center;
-        justify-content: center;
-      }
-
-      & h2 {
-        margin-top: 0;
+        justify-content: center;  
       }
     }
 
@@ -82,16 +70,7 @@ const Wrapper = styled.div`
       & div {
         flex-direction: column;
       }
-
-      & h2 {
-        margin-top: -51.5px;
-      }
     }
-  }
-
-  & h1,
-  & h2 {
-    margin: 0;
   }
 
   @media (max-width: ${breakinpPoints.largeDesktop}px) {
