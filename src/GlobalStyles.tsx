@@ -42,7 +42,7 @@ export const GlobalStyles = createGlobalStyle`
   h1 {
     font-size: 72px;
     color: #FFF;
-    font-family: Bebas Neue;
+    font-family: Bungee Outline;
     font-weight: 400;
   }
 

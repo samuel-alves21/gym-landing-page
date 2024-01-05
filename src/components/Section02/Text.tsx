@@ -5,7 +5,7 @@ export const Text = () => {
   return (
     <Wrapper>
       <h1>nossos</h1>
-      &nbsp;
+      &nbsp; &nbsp;
       <h2>diferenciais</h2>
     </Wrapper>
   )

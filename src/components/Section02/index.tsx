@@ -43,7 +43,7 @@ export const Section02 = () => {
 
 const Wrapper = styled.section`
   h1 {
-    line-height: 0.3;
+    line-height: 0.5;
   }
 
   h2 {

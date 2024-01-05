@@ -8,7 +8,7 @@ export const Text = () => {
       <div>
         <div className='title'>
           <h1>Faça parte</h1>
-          &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp;
           <h2>da família</h2>
         </div>
         <p>
@@ -67,7 +67,11 @@ const Wrapper = styled.div`
         margin-bottom: 100px;
 
         h2 {
-          line-height: 0.5;
+          line-height: 0;
+        }
+        
+        h1 {
+          line-height: 1.8;
         }
       }
     }

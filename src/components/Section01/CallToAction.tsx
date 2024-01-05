@@ -37,7 +37,7 @@ const Wrapper = styled.div`
   }
 
   h1 {
-    line-height: 0.3;
+    line-height: 0.5;
   }
 
 
