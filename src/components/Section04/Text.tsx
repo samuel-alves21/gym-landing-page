@@ -6,7 +6,7 @@ export const Text = () => {
   return (
     <Wrapper>
       <div>
-        <div>
+        <div className='title'>
           <h1>Faça parte</h1>
           &nbsp; &nbsp; &nbsp;
           <h2>da família</h2>
@@ -34,6 +34,10 @@ const Wrapper = styled.div`
   text-align: left;
   gap: 30px;
 
+  .title {
+    margin-bottom: 30px;
+  }
+
   & > div > p {
     max-width: 814px;
     margin-top: -38px;
@@ -57,6 +61,14 @@ const Wrapper = styled.div`
         flex-direction: row;
         align-items: center;
         justify-content: center;  
+      }
+
+      .title {
+        margin-bottom: 100px;
+
+        h2 {
+          line-height: 0.5;
+        }
       }
     }
 
